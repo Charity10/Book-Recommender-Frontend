@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", "Poppins";
+}
+
+html {
+  font-size: 62.5%;
+  background: var(--col-background-main);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", "Poppins" !important;
+  background: var(--col-background-main);
+}
