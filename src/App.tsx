@@ -1,13 +1,8 @@
-import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import AppRoutes from "./AppRoutes";
+import React from 'react';
+import RecommendationsPage from './components/RecommendationsPage';
 
 function App() {
-  return (
-    <Router>
-      <AppRoutes />;
-    </Router>
-  );
+  return <RecommendationsPage />;
 }
 
 export default App;
