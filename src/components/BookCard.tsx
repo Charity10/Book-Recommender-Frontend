@@ -1,7 +1,9 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface BookCardProps {
+  id: number;
   title: string;
   author: string;
   category: string;
@@ -11,6 +13,7 @@ interface BookCardProps {
 }
 
 const BookCard: React.FC<BookCardProps> = ({ 
+  id,
   title, 
   author, 
   category, 
@@ -152,6 +155,7 @@ const BookCard: React.FC<BookCardProps> = ({
         </div>
         
         {/* Learn More Button */}
+         <Link to={`/book/${id}`}>
         <button 
           className="px-6 py-2 rounded-lg font-semibold text-black text-sm self-start transition-all duration-200 hover:shadow-md hover:scale-105"
           style={{ 
@@ -161,6 +165,7 @@ const BookCard: React.FC<BookCardProps> = ({
         >
           Learn more
         </button>
+        </Link>
       </div>
     </div>
   );
